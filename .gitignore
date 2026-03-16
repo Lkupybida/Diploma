@@ -1,0 +1,14 @@
+/data/gold/full_dataset.parquet
+/data/gold/test.parquet
+/data/gold/train.parquet
+/data/gold/val.parquet
+/data/raw/checkpoint.parquet
+/data/raw/data_with_weather.parquet
+/data/raw/data_no_weather.parquet
+/data/raw/full_concated.parquet
+/data/raw/full_concated_copy.parquet
+/data/raw/head_concated.parquet
+/data/silver/dataset_with_weather_time_features.parquet
+/AutogluonModels/
+/mlruns/
+/models/
