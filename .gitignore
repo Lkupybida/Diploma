@@ -12,3 +12,5 @@
 /AutogluonModels/
 /mlruns/
 /models/
+/overleaf
+*.parquet
