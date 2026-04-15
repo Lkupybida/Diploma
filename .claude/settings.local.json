@@ -4,7 +4,8 @@
       "Bash(python3)",
       "Bash(python)",
       "Bash(python:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(find /Users/levkupybida/PycharmProjects/Diploma/data -name *.parquet)"
     ]
   }
 }

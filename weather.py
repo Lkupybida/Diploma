@@ -188,10 +188,11 @@ def smart_requests(path_in, path_out, checkpoint_path, eic_code_name = 'EIC-ко
     try:
         df_with_weather = df[~df['temperature_2m'].isna()]
         df_no_weather = df[df['temperature_2m'].isna()]
+        print(f"Gas stations with weather: {len(df_with_weather[eic_code_name].unique())}\nGas stations with no weather: {len(df_no_weather[eic_code_name].unique())}")
     except KeyError:
         df_with_weather = pd.DataFrame()
         df_no_weather = df.copy()
-    print(f"Gas stations with weather: {len(df_with_weather[eic_code_name].unique())}\nGas stations with no weather: {len(df_no_weather[eic_code_name].unique())}")
+        print(f"Gas stations with weather: {0}\nGas stations with no weather: {len(df_no_weather[eic_code_name].unique())}")
     first_run = True
     for gas_station in tqdm(df_no_weather[eic_code_name].unique(), desc="Gas stations"):
         if first_run:
