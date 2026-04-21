@@ -15,5 +15,8 @@
 /overleaf
 *.parquet
 *.xlsx
-/lightning_logs/
-/checkpoints/
+/lightning_logs
+/checkpoints
+/.claude
+/catboost_info
+/tb_logs
