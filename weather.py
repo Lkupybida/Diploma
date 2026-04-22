@@ -183,7 +183,7 @@ def read_txt() -> str:
 def smart_requests(path_in, path_out, checkpoint_path, eic_code_name = 'EIC-код',
     lat_col: str = "GPS-координати - Широта",
     lon_col: str = "GPS-координати - Довгота",
-    sleep_time = 60):
+    sleep_time = 50):
     df = pd.read_parquet(path_in)
     try:
         df_with_weather = df[~df['temperature_2m'].isna()]
