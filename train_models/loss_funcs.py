@@ -16,27 +16,35 @@ def mape(y_true, y_pred):
     mask = y_true != 0
     return np.mean(np.abs((y_true[mask] - y_pred[mask]) / y_true[mask])) * 100
 
+import numpy as np
+
 def money(y_true, y_pred, price, selling_price, buying_price):
     """
-    Compute the extra cost (vs perfect forecast) for each sample.
+    Works with scalars or numpy arrays.
 
-    Over-prediction (y_pred > y_true): excess energy sold back at selling_price.
-    Under-prediction (y_pred < y_true): deficit bought at buying_price.
-
-    Returns an array of per-sample extra costs (negative = savings, positive = penalty).
-    Works element-wise on scalars or numpy arrays.
+    y_true - true consumption
+    y_pred - predicted consumption
+    price - day ahead price
+    selling_price - price for selling excess
+    buying_price - price for buying deficit
     """
-    y_true        = np.asarray(y_true,        dtype=float)
-    y_pred        = np.asarray(y_pred,        dtype=float)
-    price         = np.asarray(price,         dtype=float)
+
+    # convert everything to arrays (scalars will still work)
+    y_true = np.asarray(y_true, dtype=float)
+    y_pred = np.asarray(y_pred, dtype=float)
+    price = np.asarray(price, dtype=float)
     selling_price = np.asarray(selling_price, dtype=float)
-    buying_price  = np.asarray(buying_price,  dtype=float)
+    buying_price = np.asarray(buying_price, dtype=float)
 
     min_spend = y_true * price
-    diff      = y_pred - y_true
+    ordered_amount = y_pred * price
+    diff = y_pred - y_true
 
-    selling_additional = np.where(diff > 0, selling_price * (y_true - y_pred), 0.0)
-    buying_additional  = np.where(diff < 0, buying_price  * diff,              0.0)
+    # element-wise logic
+    real_spend = (
+        ordered_amount
+        - np.where(diff > 0, selling_price * diff, 0.0)
+        - np.where(diff < 0, buying_price * diff, 0.0)
+    )
 
-    real_spend = min_spend + selling_additional + buying_additional
     return real_spend - min_spend
