@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/468751289596615209
+creation_time: 1777196264025
+experiment_id: '468751289596615209'
+last_update_time: 1777196264025
+lifecycle_stage: active
+name: crossformer_money_smape

@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/243156425252395242
+creation_time: 1777150387348
+experiment_id: '243156425252395242'
+last_update_time: 1777150387348
+lifecycle_stage: active
+name: electricity_forecasting_rose_10_epochs

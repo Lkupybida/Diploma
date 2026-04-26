@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/243156425252395242/b48901651f0046b790cabf30fe44453e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '243156425252395242'
+lifecycle_stage: active
+run_id: b48901651f0046b790cabf30fe44453e
+run_name: ROSE_seq168_h48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777150387506
+status: 1
+tags: []
+user_id: Lev

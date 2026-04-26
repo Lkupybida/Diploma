@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/822410661845166067
+creation_time: 1777191931483
+experiment_id: '822410661845166067'
+last_update_time: 1777191931483
+lifecycle_stage: active
+name: crossformer_money_loss

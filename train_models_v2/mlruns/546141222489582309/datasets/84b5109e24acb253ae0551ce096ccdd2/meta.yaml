@@ -1,0 +1,482 @@
+digest: 303a79aa
+name: dataset
+profile: '{"num_rows": 295430, "num_elements": 167804240}'
+schema: '{"mlflow_colspec": [{"type": "float", "name": "day_ahead_price", "required":
+  true}, {"type": "float", "name": "selling_price", "required": true}, {"type": "float",
+  "name": "buying price", "required": true}, {"type": "float", "name": "max_power",
+  "required": true}, {"type": "integer", "name": "max_solar", "required": true}, {"type":
+  "integer", "name": "max_ev_power_kW", "required": true}, {"type": "float", "name":
+  "latitude", "required": true}, {"type": "float", "name": "longitude", "required":
+  true}, {"type": "integer", "name": "temperature_2m", "required": true}, {"type":
+  "integer", "name": "relative_humidity_2m", "required": true}, {"type": "integer",
+  "name": "dew_point_2m", "required": true}, {"type": "integer", "name": "apparent_temperature",
+  "required": true}, {"type": "integer", "name": "surface_pressure", "required": true},
+  {"type": "integer", "name": "cloud_cover", "required": true}, {"type": "integer",
+  "name": "cloud_cover_low", "required": true}, {"type": "integer", "name": "cloud_cover_mid",
+  "required": true}, {"type": "integer", "name": "cloud_cover_high", "required": true},
+  {"type": "integer", "name": "wind_speed_10m", "required": true}, {"type": "integer",
+  "name": "wind_direction_10m", "required": true}, {"type": "integer", "name": "wind_gusts_10m",
+  "required": true}, {"type": "integer", "name": "shortwave_radiation", "required":
+  true}, {"type": "integer", "name": "direct_normal_irradiance", "required": true},
+  {"type": "integer", "name": "diffuse_radiation", "required": true}, {"type": "integer",
+  "name": "precipitation", "required": true}, {"type": "integer", "name": "rain",
+  "required": true}, {"type": "integer", "name": "snowfall", "required": true}, {"type":
+  "integer", "name": "time_idx", "required": true}, {"type": "boolean", "name": "osr_desc_\u0412\u043e\u043b\u0438\u043d\u044c",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0412\u0456\u043d\u043d\u0438\u0446\u044f",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0414\u043d\u0456\u043f\u0440\u043e",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0416\u0438\u0442\u043e\u043c\u0438\u0440",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0417\u0430\u043f\u043e\u0440\u0456\u0436\u0436\u044f",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041a\u0438\u0457\u0432",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041a\u0438\u0457\u0432\u041e\u0431\u043b",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041a\u0440\u043e\u043f\u0438\u0432\u043d\u0438\u0446\u044c\u043a\u0438\u0439",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041b\u044c\u0432\u0456\u0432",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041d\u0430\u0444\u0442\u043e\u0433\u0430\u0437\u041d\u0420",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041d\u0430\u0444\u0442\u043e\u0433\u0430\u0437\u041d\u042f",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041e\u0434\u0435\u0441\u0430",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u041f\u043e\u043b\u0442\u0430\u0432\u0430",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0420\u0456\u0432\u043d\u0435",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0421\u0443\u043c\u0438",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0422\u0435\u0440\u043d\u043e\u043f\u0456\u043b\u044c",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0423\u0417", "required":
+  true}, {"type": "boolean", "name": "osr_desc_\u0423\u0436\u0433\u043e\u0440\u043e\u0434",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0425\u0430\u0440\u043a\u0456\u0432",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0425\u0435\u0440\u0441\u043e\u043d",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u044c\u043a\u0438\u0439",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0426\u0415\u041a", "required":
+  true}, {"type": "boolean", "name": "osr_desc_\u0427\u0435\u0440\u043a\u0430\u0441\u0438",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0427\u0435\u0440\u043d\u0456\u0432\u0446\u0456",
+  "required": true}, {"type": "boolean", "name": "osr_desc_\u0427\u0435\u0440\u043d\u0456\u0433\u0456\u0432",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041d\u0435\u0431\u0440\u0435\u043d\u0434\u043e\u0432\u0430",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041e\u041a\u041a\u041e-LPG",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041e\u041a\u041a\u041e-\u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041e\u041a\u041a\u041e-\u043c\u0456\u043d\u0456",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041e\u041a\u041a\u041e-\u043c\u0456\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041e\u041a\u041a\u041e-\u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442",
+  "required": true}, {"type": "boolean", "name": "station_type_\u041e\u041a\u041a\u041e-\u0442\u0440\u0430\u0441\u043e\u0432\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0412\u043e\u043b\u0438\u043d\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0412\u0456\u043d\u043d\u0438\u0446\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0414\u043d\u0456\u043f\u0440\u043e\u043f\u0435\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0416\u0438\u0442\u043e\u043c\u0438\u0440\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0417\u0430\u043a\u0430\u0440\u043f\u0430\u0442\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0417\u0430\u043f\u043e\u0440\u0456\u0437\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u041a\u0456\u0440\u043e\u0432\u043e\u0433\u0440\u0430\u0434\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u041e\u0434\u0435\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u041f\u043e\u043b\u0442\u0430\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0420\u0456\u0432\u043d\u0435\u043d\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0421\u0443\u043c\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0422\u0435\u0440\u043d\u043e\u043f\u0456\u043b\u044c\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0425\u0435\u0440\u0441\u043e\u043d\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0427\u0435\u0440\u043a\u0430\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0427\u0435\u0440\u043d\u0456\u0432\u0435\u0446\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u0427\u0435\u0440\u043d\u0456\u0433\u0456\u0432\u0441\u044c\u043a\u0430",
+  "required": true}, {"type": "boolean", "name": "oblast_\u043c. \u041a\u0438\u0457\u0432",
+  "required": true}, {"type": "boolean", "name": "Month_1", "required": true}, {"type":
+  "boolean", "name": "Month_10", "required": true}, {"type": "boolean", "name": "Month_11",
+  "required": true}, {"type": "boolean", "name": "Month_12", "required": true}, {"type":
+  "boolean", "name": "Month_2", "required": true}, {"type": "boolean", "name": "Month_3",
+  "required": true}, {"type": "boolean", "name": "Month_4", "required": true}, {"type":
+  "boolean", "name": "Month_5", "required": true}, {"type": "boolean", "name": "Month_6",
+  "required": true}, {"type": "boolean", "name": "Month_7", "required": true}, {"type":
+  "boolean", "name": "Month_8", "required": true}, {"type": "boolean", "name": "Month_9",
+  "required": true}, {"type": "boolean", "name": "Day_1", "required": true}, {"type":
+  "boolean", "name": "Day_10", "required": true}, {"type": "boolean", "name": "Day_11",
+  "required": true}, {"type": "boolean", "name": "Day_12", "required": true}, {"type":
+  "boolean", "name": "Day_13", "required": true}, {"type": "boolean", "name": "Day_14",
+  "required": true}, {"type": "boolean", "name": "Day_15", "required": true}, {"type":
+  "boolean", "name": "Day_16", "required": true}, {"type": "boolean", "name": "Day_17",
+  "required": true}, {"type": "boolean", "name": "Day_18", "required": true}, {"type":
+  "boolean", "name": "Day_19", "required": true}, {"type": "boolean", "name": "Day_2",
+  "required": true}, {"type": "boolean", "name": "Day_20", "required": true}, {"type":
+  "boolean", "name": "Day_21", "required": true}, {"type": "boolean", "name": "Day_22",
+  "required": true}, {"type": "boolean", "name": "Day_23", "required": true}, {"type":
+  "boolean", "name": "Day_24", "required": true}, {"type": "boolean", "name": "Day_25",
+  "required": true}, {"type": "boolean", "name": "Day_26", "required": true}, {"type":
+  "boolean", "name": "Day_27", "required": true}, {"type": "boolean", "name": "Day_28",
+  "required": true}, {"type": "boolean", "name": "Day_29", "required": true}, {"type":
+  "boolean", "name": "Day_3", "required": true}, {"type": "boolean", "name": "Day_30",
+  "required": true}, {"type": "boolean", "name": "Day_31", "required": true}, {"type":
+  "boolean", "name": "Day_4", "required": true}, {"type": "boolean", "name": "Day_5",
+  "required": true}, {"type": "boolean", "name": "Day_6", "required": true}, {"type":
+  "boolean", "name": "Day_7", "required": true}, {"type": "boolean", "name": "Day_8",
+  "required": true}, {"type": "boolean", "name": "Day_9", "required": true}, {"type":
+  "boolean", "name": "Hour_0", "required": true}, {"type": "boolean", "name": "Hour_1",
+  "required": true}, {"type": "boolean", "name": "Hour_10", "required": true}, {"type":
+  "boolean", "name": "Hour_11", "required": true}, {"type": "boolean", "name": "Hour_12",
+  "required": true}, {"type": "boolean", "name": "Hour_13", "required": true}, {"type":
+  "boolean", "name": "Hour_14", "required": true}, {"type": "boolean", "name": "Hour_15",
+  "required": true}, {"type": "boolean", "name": "Hour_16", "required": true}, {"type":
+  "boolean", "name": "Hour_17", "required": true}, {"type": "boolean", "name": "Hour_18",
+  "required": true}, {"type": "boolean", "name": "Hour_19", "required": true}, {"type":
+  "boolean", "name": "Hour_2", "required": true}, {"type": "boolean", "name": "Hour_20",
+  "required": true}, {"type": "boolean", "name": "Hour_21", "required": true}, {"type":
+  "boolean", "name": "Hour_22", "required": true}, {"type": "boolean", "name": "Hour_23",
+  "required": true}, {"type": "boolean", "name": "Hour_3", "required": true}, {"type":
+  "boolean", "name": "Hour_4", "required": true}, {"type": "boolean", "name": "Hour_5",
+  "required": true}, {"type": "boolean", "name": "Hour_6", "required": true}, {"type":
+  "boolean", "name": "Hour_7", "required": true}, {"type": "boolean", "name": "Hour_8",
+  "required": true}, {"type": "boolean", "name": "Hour_9", "required": true}, {"type":
+  "boolean", "name": "day_of_week_0", "required": true}, {"type": "boolean", "name":
+  "day_of_week_1", "required": true}, {"type": "boolean", "name": "day_of_week_2",
+  "required": true}, {"type": "boolean", "name": "day_of_week_3", "required": true},
+  {"type": "boolean", "name": "day_of_week_4", "required": true}, {"type": "boolean",
+  "name": "day_of_week_5", "required": true}, {"type": "boolean", "name": "day_of_week_6",
+  "required": true}, {"type": "boolean", "name": "season_autumn", "required": true},
+  {"type": "boolean", "name": "season_spring", "required": true}, {"type": "boolean",
+  "name": "season_summer", "required": true}, {"type": "boolean", "name": "season_winter",
+  "required": true}, {"type": "float", "name": "lag_48h", "required": true}, {"type":
+  "float", "name": "lag_49h", "required": true}, {"type": "float", "name": "lag_50h",
+  "required": true}, {"type": "float", "name": "lag_51h", "required": true}, {"type":
+  "float", "name": "lag_52h", "required": true}, {"type": "float", "name": "lag_72h",
+  "required": true}, {"type": "float", "name": "lag_96h", "required": true}, {"type":
+  "float", "name": "lag_120h", "required": true}, {"type": "float", "name": "lag_144h",
+  "required": true}, {"type": "float", "name": "lag_168h", "required": true}, {"type":
+  "float", "name": "lag_336h", "required": true}, {"type": "boolean", "name": "eic_code_62Z0008583037334",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z0011230718431", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z0096677872985", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z0101426517156", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z013852333354Y", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z0188778556192", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z0211989286227", "required": true}, {"type": "boolean", "name": "eic_code_62Z0232888687220",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z0257942815672", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z0259886906816", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z0271773349182", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z0285733378448", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z0352290641310", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z0453715929868", "required": true}, {"type": "boolean", "name": "eic_code_62Z0494602382356",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z0499856982765", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z052548745986I", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z0611125169123", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z0628247731117", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z0650102958310", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z0760150283041", "required": true}, {"type": "boolean", "name": "eic_code_62Z0763594350330",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z0781092622088", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z0832092193888", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z0861889954804", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z0878741618562", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z0961732571457", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z0966299278375", "required": true}, {"type": "boolean", "name": "eic_code_62Z0998466306766",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1008745793703", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1011664646618", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1026971387441", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1037291599086", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1040856316899", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z1052783389048", "required": true}, {"type": "boolean", "name": "eic_code_62Z1067720741039",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1077202948019", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1092353551490", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1105854285450", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1108084147506", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1118549203538", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z1124575209846", "required": true}, {"type": "boolean", "name": "eic_code_62Z1175275386589",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1180469265339", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1192270413312", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1209368438999", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1218299930809", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1291599260160", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z131639303888J", "required": true}, {"type": "boolean", "name": "eic_code_62Z1325310425194",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z132888029374Z", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1335377683815", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1369451614498", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1393717815036", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1419007174687", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z1426991213062", "required": true}, {"type": "boolean", "name": "eic_code_62Z1471375271708",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1476408174577", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1483215110522", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1515842202934", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1528625762710", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1626313673880", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z1657030092515", "required": true}, {"type": "boolean", "name": "eic_code_62Z1659898074045",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1667171467788", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1699793733727", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1771663109656", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1774668832410", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1776504505608", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z1781749778395", "required": true}, {"type": "boolean", "name": "eic_code_62Z1785740293700",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1785888164071", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1796820029369", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1797927643038", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1811965727106", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z1829125017921", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z1854635779617", "required": true}, {"type": "boolean", "name": "eic_code_62Z1908641756932",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z1931450722959", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z1942693584669", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z1971620996431", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z1993541756298", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z2035372013978", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z2063504976595", "required": true}, {"type": "boolean", "name": "eic_code_62Z2088310794305",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z2146506845449", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z220653865958K", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z2218971118163", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z2265922863404", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z2295513355879", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z2312293868557", "required": true}, {"type": "boolean", "name": "eic_code_62Z2338430234645",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z2395399053131", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z2410378897684", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z2462903940798", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z2483925041819", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z2496863291167", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z2532379651825", "required": true}, {"type": "boolean", "name": "eic_code_62Z2534451404528",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z2548630158379", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z2553437444859", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z2588424624258", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z263077610044S", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z2634468308280", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z2634769525063", "required": true}, {"type": "boolean", "name": "eic_code_62Z2636920381647",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z263750576887Y", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z2651182694771", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z2652760199060", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z2655661084314", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z2673921373211", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z2718723694345", "required": true}, {"type": "boolean", "name": "eic_code_62Z2749095020078",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z2752425371057", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z2763068988417", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z277440221246K", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z2863396690510", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z2871189104161", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z2923711919630", "required": true}, {"type": "boolean", "name": "eic_code_62Z2924124864686",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z2948906740151", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z2986251549800", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3004068068544", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3050335819767", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3064979528589", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z308384437449W", "required": true}, {"type": "boolean", "name": "eic_code_62Z3089684577498",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3123385628010", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3139295037679", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3151696887521", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3251275644497", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3261331410025", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z3307823675943", "required": true}, {"type": "boolean", "name": "eic_code_62Z3311530591901",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3319570183213", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3352742280770", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3363428137139", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3386096691495", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3402828150471", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z3405350712029", "required": true}, {"type": "boolean", "name": "eic_code_62Z3418886958455",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3423083910179", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3459585554968", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3470960064884", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3500556180000", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3500904013798", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z3522594292484", "required": true}, {"type": "boolean", "name": "eic_code_62Z3550947401928",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3584090129468", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3599582761965", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3627036877597", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3670413006670", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3714266119413", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z3735193775209", "required": true}, {"type": "boolean", "name": "eic_code_62Z3737130651612",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3760655590536", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3769305559380", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3777584435448", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3782531100736", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3786741394110", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z3816201773292", "required": true}, {"type": "boolean", "name": "eic_code_62Z3831028766926",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3839853638432", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3896175377334", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z3914112748257", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z3914826994899", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z3948925189967", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z3958647570133", "required": true}, {"type": "boolean", "name": "eic_code_62Z3962336886350",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z3982298183754", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z3982836134374", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z4015550378470", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z4022724546559", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z4026142936382", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z4059172108670", "required": true}, {"type": "boolean", "name": "eic_code_62Z4101656497928",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z4106130995736", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z4108523399069", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z4150188688382", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z4166968219279", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z4216533809712", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z4220821460615", "required": true}, {"type": "boolean", "name": "eic_code_62Z4242835948103",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z4272248913477", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z4312225157283", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z4312238198106", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z435223622742X", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z4376937874218", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z4393630336378", "required": true}, {"type": "boolean", "name": "eic_code_62Z4437758189134",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z4515858754299", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z4534322132001", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z4535568873600", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z4548758318973", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z4603551328872", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z4620750607760", "required": true}, {"type": "boolean", "name": "eic_code_62Z4670013981058",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z4695844209784", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z4714370201362", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z4799325639679", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z4867412057712", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z4869256917783", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z4932099022421", "required": true}, {"type": "boolean", "name": "eic_code_62Z4935598443531",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z4948939192262", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z4971310138140", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z4973549241143", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z4988166368088", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z5016551205400", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z5036679942884", "required": true}, {"type": "boolean", "name": "eic_code_62Z5038669404578",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z5064314448909", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z5087432881718", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z510430374778H", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z5156908732276", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z5197867294689", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z5227218120709", "required": true}, {"type": "boolean", "name": "eic_code_62Z5276218736734",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z5292138491045", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z5320867133425", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z5360291486920", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z5387901249939", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z5422632680702", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z5423451602138", "required": true}, {"type": "boolean", "name": "eic_code_62Z5517692082284",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z5520446881915", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z5523967416230", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z5544769493288", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z5611760007206", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z5641732606491", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z5644220618430", "required": true}, {"type": "boolean", "name": "eic_code_62Z5644272506149",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z568915908644K", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z5700239654314", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z5706564184731", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z5771526107976", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z5773779317696", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z5807715983143", "required": true}, {"type": "boolean", "name": "eic_code_62Z5821574095639",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z5838478539480", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z5861103133130", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z588650225523K", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z5917376126498", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z5924116714640", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z5944737391486", "required": true}, {"type": "boolean", "name": "eic_code_62Z5996705858655",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z6035944504754", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z6043382821714", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z6057805565288", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z6070434707477", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z6082894318884", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z6084896400004", "required": true}, {"type": "boolean", "name": "eic_code_62Z6091309944129",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z6136241721979", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z6153652780082", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z6186862204513", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z6235725021728", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z6295419983830", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z6308545383007", "required": true}, {"type": "boolean", "name": "eic_code_62Z6337618908569",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z6344783791424", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z6365807395451", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z6413133225959", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z644025308441R", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z6499995405271", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z6526777505245", "required": true}, {"type": "boolean", "name": "eic_code_62Z6540712406912",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z6542983815153", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z6571743089872", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z6605113197287", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z661769289704V", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z662465333459B", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z6624735969589", "required": true}, {"type": "boolean", "name": "eic_code_62Z6626544596360",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z6634912359403", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z6814717943705", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z6960657066877", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z6961364992272", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z6964799374009", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z6969613150684", "required": true}, {"type": "boolean", "name": "eic_code_62Z7027336077892",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z7029546479880", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7032230667708", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z7036676557692", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z706855223975R", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7072263538637", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z7081538064702", "required": true}, {"type": "boolean", "name": "eic_code_62Z7081576017171",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z7082490910138", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7083678872650", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z7088382629051", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z7103224563785", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7109147124378", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z7119951832999", "required": true}, {"type": "boolean", "name": "eic_code_62Z7125526126367",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z713390564870T", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7156461265052", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z717554526459O", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z7178192222681", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7198199177941", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z7219337406431", "required": true}, {"type": "boolean", "name": "eic_code_62Z7227986894278",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z7257059210435", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7258812866213", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z7268415982128", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z7306502515032", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7401145918482", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z7456298044336", "required": true}, {"type": "boolean", "name": "eic_code_62Z7458705390604",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z7497150291839", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7511957889375", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z7581112729322", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z7591557890876", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7612261635040", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z7654575712966", "required": true}, {"type": "boolean", "name": "eic_code_62Z7682329447008",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z771900708749Y", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7733696342866", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z7757948039221", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z7764311653541", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7766151236986", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z7776579634526", "required": true}, {"type": "boolean", "name": "eic_code_62Z7841956124522",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z7876545081062", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z7878159195687", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z7932254060039", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z7941626132802", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z7973386804189", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z8036354573038", "required": true}, {"type": "boolean", "name": "eic_code_62Z811968840923V",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z8138279652086", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z8150719476557", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z8163712471249", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z8234166113338", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z8267336736253", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z8292498523912", "required": true}, {"type": "boolean", "name": "eic_code_62Z8388771014002",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z8403052924571", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z8426544240206", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z8461462561806", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z8464597395452", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z8494140974602", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z8512981217529", "required": true}, {"type": "boolean", "name": "eic_code_62Z8531625937985",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z8538558470324", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z8541926713598", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z8786952418585", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z8834115626356", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z8852704405887", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z8888861892130", "required": true}, {"type": "boolean", "name": "eic_code_62Z8905288593120",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z8916686891448", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z8919117976790", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z8937841078757", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z8953450714603", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z897401965339V", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z8988935135957", "required": true}, {"type": "boolean", "name": "eic_code_62Z9042463861989",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z904708724460A", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z9093615083372", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z9129041027294", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z9163183294707", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z9179474926730", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z918309493739N", "required": true}, {"type": "boolean", "name": "eic_code_62Z9191598698031",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z9214767819161", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z9220346666198", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z9278811980047", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z9284707003366", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z9305845228363", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z9342951787758", "required": true}, {"type": "boolean", "name": "eic_code_62Z9357538842306",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z9431825219925", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z945209821808O", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z9487507238058", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z9492255746718", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z9507468441531", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z9512175266041", "required": true}, {"type": "boolean", "name": "eic_code_62Z9514371217440",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z9572466865833", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z9587735590577", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z9613656958413", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z9628766695257", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z9662014978089", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z9672876874134", "required": true}, {"type": "boolean", "name": "eic_code_62Z9732843756703",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z9750093264061", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z9755185919256", "required": true},
+  {"type": "boolean", "name": "eic_code_62Z9767507424207", "required": true}, {"type":
+  "boolean", "name": "eic_code_62Z9802763935791", "required": true}, {"type": "boolean",
+  "name": "eic_code_62Z9807667180062", "required": true}, {"type": "boolean", "name":
+  "eic_code_62Z9964019189968", "required": true}, {"type": "boolean", "name": "eic_code_62Z9967272139607",
+  "required": true}, {"type": "boolean", "name": "eic_code_62Z9972124228553", "required":
+  true}, {"type": "boolean", "name": "eic_code_62Z9997819406173", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Lev", "mlflow.source.name": "C:\\Users\\Lev\\Miniconda3\\envs\\Diploma\\lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

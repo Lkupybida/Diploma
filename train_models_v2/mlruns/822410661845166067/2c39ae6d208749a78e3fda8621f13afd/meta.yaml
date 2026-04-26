@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/822410661845166067/2c39ae6d208749a78e3fda8621f13afd/artifacts
+end_time: 1777192044289
+entry_point_name: ''
+experiment_id: '822410661845166067'
+lifecycle_stage: active
+run_id: 2c39ae6d208749a78e3fda8621f13afd
+run_name: crossformer_1777191932
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777191932444
+status: 3
+tags: []
+user_id: Lev

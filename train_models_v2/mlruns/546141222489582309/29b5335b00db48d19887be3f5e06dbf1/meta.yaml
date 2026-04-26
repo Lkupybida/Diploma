@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/546141222489582309/29b5335b00db48d19887be3f5e06dbf1/artifacts
+end_time: 1777106573433
+entry_point_name: ''
+experiment_id: '546141222489582309'
+lifecycle_stage: active
+run_id: 29b5335b00db48d19887be3f5e06dbf1
+run_name: loud-bird-409
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777105891757
+status: 3
+tags: []
+user_id: Lev

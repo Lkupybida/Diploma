@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/145248764175371035/81467b90b41e4ff39b38de1fe9b64624/artifacts
+end_time: 1777135766213
+entry_point_name: ''
+experiment_id: '145248764175371035'
+lifecycle_stage: active
+run_id: 81467b90b41e4ff39b38de1fe9b64624
+run_name: gru_money_loss
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777135765979
+status: 4
+tags: []
+user_id: Lev

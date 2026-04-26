@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/243156425252395242/models/m-8ab52dde61154ee8a79a3501cbe906fa/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.9.25
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.6.0+cu124
+mlflow_version: 3.1.4
+model_id: m-8ab52dde61154ee8a79a3501cbe906fa
+model_size_bytes: 2242106
+model_uuid: m-8ab52dde61154ee8a79a3501cbe906fa
+prompts: null
+run_id: b48901651f0046b790cabf30fe44453e
+utc_time_created: '2026-04-25 21:09:38.300515'

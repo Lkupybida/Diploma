@@ -1,0 +1,1 @@
+["sum_of_kWh", "temperature_2m", "dew_point_2m", "relative_humidity_2m", "precipitation", "wind_speed_10m", "shortwave_radiation", "latitude", "longitude", "hour_sin", "hour_cos", "dow_sin", "dow_cos", "month_sin", "month_cos"]
