@@ -1,8 +1,8 @@
 import pandas as pd
 
-TRAIN_PATH_WITH_DATETME = "../data/gold/datetime_time_idx_cat/train.parquet"
-VAL_PATH_WITH_DATETME   = "../data/gold/datetime_time_idx_cat/val.parquet"
-TEST_PATH_WITH_DATETME  = "../data/gold/datetime_time_idx_cat/test.parquet"
+TRAIN_PATH_WITH_DATETME = "../data/gold/datetime_time_idx_global_cat/train.parquet"
+VAL_PATH_WITH_DATETME   = "../data/gold/datetime_time_idx_global_cat/val.parquet"
+TEST_PATH_WITH_DATETME  = "../data/gold/datetime_time_idx_global_cat/test.parquet"
 
 
 TRAIN_PATH_OHE = "../data/gold/time_idx_ohe/train.parquet"

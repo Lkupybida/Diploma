@@ -1,0 +1,1 @@
+['temperature_2m', 'dew_point_2m', 'relative_humidity_2m', 'precipitation', 'wind_speed_10m', 'shortwave_radiation', 'dam_price', 'sell_bm_price', 'buy_bm_price', 'max_power', 'max_solar', 'max_ev']

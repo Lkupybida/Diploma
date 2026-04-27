@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/748919410746079016/3023cca638f24631937aa3690996459d/artifacts
+end_time: 1777247486389
+entry_point_name: ''
+experiment_id: '748919410746079016'
+lifecycle_stage: active
+run_id: 3023cca638f24631937aa3690996459d
+run_name: merciful-bass-654
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777246769287
+status: 3
+tags: []
+user_id: Lev

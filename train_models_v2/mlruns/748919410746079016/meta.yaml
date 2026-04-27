@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/748919410746079016
+creation_time: 1777246769022
+experiment_id: '748919410746079016'
+last_update_time: 1777246769022
+lifecycle_stage: active
+name: lgbm_10_optuna_trials

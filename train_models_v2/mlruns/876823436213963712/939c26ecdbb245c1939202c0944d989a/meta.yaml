@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/876823436213963712/939c26ecdbb245c1939202c0944d989a/artifacts
+end_time: 1777218925211
+entry_point_name: ''
+experiment_id: '876823436213963712'
+lifecycle_stage: active
+run_id: 939c26ecdbb245c1939202c0944d989a
+run_name: chronos-t5-small-ctx512-pred64
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777218324558
+status: 3
+tags: []
+user_id: Lev

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/537010363461280519/bd8eaa24d27d49718a6b0c8e86d835d2/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '537010363461280519'
+lifecycle_stage: active
+run_id: bd8eaa24d27d49718a6b0c8e86d835d2
+run_name: tft_rmse_loss
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777227875325
+status: 1
+tags: []
+user_id: Lev

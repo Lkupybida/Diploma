@@ -6,7 +6,7 @@ def smape(y_true, y_pred):
     y_true = np.asarray(y_true, dtype=float)
     y_pred = np.asarray(y_pred, dtype=float)
     denom = (np.abs(y_true) + np.abs(y_pred)) / 2.0
-    return np.mean(np.abs(y_true - y_pred) / np.maximum(denom, 1e-8))
+    return np.mean(np.abs(y_true - y_pred) / np.maximum(denom, 1e-8))*100
 
 def rmse(y_true, y_pred):
     return np.sqrt(mean_squared_error(y_true, y_pred))

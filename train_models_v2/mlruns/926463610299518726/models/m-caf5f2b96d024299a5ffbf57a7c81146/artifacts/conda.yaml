@@ -1,0 +1,36 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.9.25
+- pip<=26.0.1
+- pip:
+  - mlflow==3.1.4
+  - accelerate==1.10.1
+  - astunparse==1.6.3
+  - attrs==25.3.0
+  - bcrypt==4.3.0
+  - boto3==1.42.68
+  - cloudpickle==3.1.1
+  - defusedxml==0.7.1
+  - dill==0.3.8
+  - google-api-core==2.30.0
+  - matplotlib==3.9.4
+  - numpy==1.26.4
+  - nvidia-ml-py3==7.352.0
+  - optree==0.19.0
+  - packaging==25.0
+  - pandas==2.3.1
+  - protobuf==6.31.1
+  - pyopenssl==25.1.0
+  - pytorch-lightning==2.6.0
+  - pyyaml==6.0.2
+  - requests==2.32.5
+  - rich==14.1.0
+  - scikit-learn==1.6.1
+  - scipy==1.13.1
+  - torch==2.6.0
+  - torchvision==0.21.0
+  - transformers==4.49.0
+  - typing-extensions==4.14.1
+  - zstandard==0.23.0
+name: mlflow-env
