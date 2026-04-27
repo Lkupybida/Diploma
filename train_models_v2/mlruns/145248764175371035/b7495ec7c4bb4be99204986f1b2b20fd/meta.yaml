@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/145248764175371035/b7495ec7c4bb4be99204986f1b2b20fd/artifacts
+end_time: 1777231466027
+entry_point_name: ''
+experiment_id: '145248764175371035'
+lifecycle_stage: active
+run_id: b7495ec7c4bb4be99204986f1b2b20fd
+run_name: gru_money_loss
+run_uuid: b7495ec7c4bb4be99204986f1b2b20fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777229753845
+status: 4
+tags: []
+user_id: skateryna

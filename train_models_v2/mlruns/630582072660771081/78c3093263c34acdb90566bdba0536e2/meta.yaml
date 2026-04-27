@@ -1,0 +1,15 @@
+artifact_uri: file:///home/skateryna/new/Diploma/train_models_v2/mlruns/630582072660771081/78c3093263c34acdb90566bdba0536e2/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '630582072660771081'
+lifecycle_stage: active
+run_id: 78c3093263c34acdb90566bdba0536e2
+run_name: moirai-nll-ctx168-pred48
+run_uuid: 78c3093263c34acdb90566bdba0536e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777216685115
+status: 1
+tags: []
+user_id: skateryna

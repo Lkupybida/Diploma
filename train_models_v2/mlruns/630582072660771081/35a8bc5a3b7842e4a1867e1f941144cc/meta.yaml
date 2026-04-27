@@ -1,0 +1,15 @@
+artifact_uri: file:///home/skateryna/new/Diploma/train_models_v2/mlruns/630582072660771081/35a8bc5a3b7842e4a1867e1f941144cc/artifacts
+end_time: 1777220658898
+entry_point_name: ''
+experiment_id: '630582072660771081'
+lifecycle_stage: active
+run_id: 35a8bc5a3b7842e4a1867e1f941144cc
+run_name: moirai-money-ctx168-pred48
+run_uuid: 35a8bc5a3b7842e4a1867e1f941144cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777219113511
+status: 3
+tags: []
+user_id: skateryna
