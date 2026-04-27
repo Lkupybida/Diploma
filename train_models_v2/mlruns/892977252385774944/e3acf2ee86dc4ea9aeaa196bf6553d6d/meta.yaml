@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/892977252385774944/e3acf2ee86dc4ea9aeaa196bf6553d6d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '892977252385774944'
+lifecycle_stage: active
+run_id: e3acf2ee86dc4ea9aeaa196bf6553d6d
+run_name: smiling-quail-514
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777218153116
+status: 1
+tags: []
+user_id: levkupybida

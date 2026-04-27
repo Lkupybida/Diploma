@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/237295797256905020/85ca9378fbc847559e89a17582ba81ea/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '237295797256905020'
+lifecycle_stage: active
+run_id: 85ca9378fbc847559e89a17582ba81ea
+run_name: rambunctious-fly-347
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777235852293
+status: 1
+tags: []
+user_id: levkupybida

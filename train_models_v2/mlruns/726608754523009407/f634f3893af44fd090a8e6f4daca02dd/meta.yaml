@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/726608754523009407/f634f3893af44fd090a8e6f4daca02dd/artifacts
+end_time: 1777219891885
+entry_point_name: ''
+experiment_id: '726608754523009407'
+lifecycle_stage: active
+run_id: f634f3893af44fd090a8e6f4daca02dd
+run_name: mysterious-koi-454
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777219846627
+status: 3
+tags: []
+user_id: levkupybida

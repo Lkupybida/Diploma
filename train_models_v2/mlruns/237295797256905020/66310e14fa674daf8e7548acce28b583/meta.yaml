@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/237295797256905020/66310e14fa674daf8e7548acce28b583/artifacts
+end_time: 1777235841573
+entry_point_name: ''
+experiment_id: '237295797256905020'
+lifecycle_stage: active
+run_id: 66310e14fa674daf8e7548acce28b583
+run_name: stately-flea-722
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777235838696
+status: 4
+tags: []
+user_id: levkupybida

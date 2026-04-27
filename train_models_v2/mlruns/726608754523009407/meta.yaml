@@ -1,0 +1,8 @@
+artifact_location: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/726608754523009407
+creation_time: 1777219846519
+experiment_id: '726608754523009407'
+last_update_time: 1777219846519
+lifecycle_stage: active
+name: lgbm_40_optuna_trials
+trace_location: null
+workspace: default

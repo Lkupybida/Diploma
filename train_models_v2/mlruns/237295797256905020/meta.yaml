@@ -1,0 +1,8 @@
+artifact_location: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/237295797256905020
+creation_time: 1777235838253
+experiment_id: '237295797256905020'
+last_update_time: 1777235838253
+lifecycle_stage: active
+name: xgboost_30_optuna_trials
+trace_location: null
+workspace: default

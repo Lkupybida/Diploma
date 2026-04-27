@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/726608754523009407/dbec4995d5e848e3828aff5cced16458/artifacts
+end_time: 1777220881356
+entry_point_name: ''
+experiment_id: '726608754523009407'
+lifecycle_stage: active
+run_id: dbec4995d5e848e3828aff5cced16458
+run_name: bouncy-tern-190
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777219896952
+status: 3
+tags: []
+user_id: levkupybida
