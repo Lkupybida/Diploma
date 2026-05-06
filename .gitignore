@@ -31,3 +31,8 @@ interface/models/chronos-2-finetuned/model.safetensors
 interface/models/chronos-2-finetuned/config.json
 *.safetensors
 /.idea
+/.DS_Store
+/training/notebooks/tb_logs/
+/training/notebooks/lightning_logs/
+/training/notebooks/checkpoints/
+/training/notebooks/.ipynb_checkpoints/
