@@ -1,0 +1,1 @@
+["sum_of_kWh", "temperature_2m", "precipitation", "cloud_cover", "wind_speed_10m", "shortwave_radiation", "direct_normal_irradiance", "latitude", "longitude", "hour_sin", "hour_cos", "dow_sin", "dow_cos", "month_sin", "month_cos", "dam_price", "sell_bm_price", "buy_bm_price"]

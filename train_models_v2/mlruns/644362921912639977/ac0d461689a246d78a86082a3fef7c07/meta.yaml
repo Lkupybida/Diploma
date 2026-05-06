@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/644362921912639977/ac0d461689a246d78a86082a3fef7c07/artifacts
+end_time: 1777391666052
+entry_point_name: ''
+experiment_id: '644362921912639977'
+lifecycle_stage: active
+run_id: ac0d461689a246d78a86082a3fef7c07
+run_name: secretive-crow-990
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777391329984
+status: 3
+tags: []
+user_id: Lev

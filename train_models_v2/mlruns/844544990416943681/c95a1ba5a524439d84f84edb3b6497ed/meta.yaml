@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/844544990416943681/c95a1ba5a524439d84f84edb3b6497ed/artifacts
+end_time: 1777279396077
+entry_point_name: ''
+experiment_id: '844544990416943681'
+lifecycle_stage: active
+run_id: c95a1ba5a524439d84f84edb3b6497ed
+run_name: patchtst
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777279037081
+status: 3
+tags: []
+user_id: Lev

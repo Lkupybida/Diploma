@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/963935225531722487
+creation_time: 1777314357414
+experiment_id: '963935225531722487'
+last_update_time: 1777314357414
+lifecycle_stage: active
+name: lstm_energy_forecast

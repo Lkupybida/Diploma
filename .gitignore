@@ -29,3 +29,4 @@
 /interface/models/chronos-2-finetuned/
 interface/models/chronos-2-finetuned/model.safetensors
 interface/models/chronos-2-finetuned/config.json
+*.safetensors

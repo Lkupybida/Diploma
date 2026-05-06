@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/193771425510901377/acd0e9eeab5c4053a442104f671bf5aa/artifacts
+end_time: 1777390723483
+entry_point_name: ''
+experiment_id: '193771425510901377'
+lifecycle_stage: active
+run_id: acd0e9eeab5c4053a442104f671bf5aa
+run_name: handsome-jay-734
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777390389175
+status: 3
+tags: []
+user_id: Lev

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/644362921912639977/fea2d0c6a0a54917ace205b705e31b65/artifacts
+end_time: 1777391740050
+entry_point_name: ''
+experiment_id: '644362921912639977'
+lifecycle_stage: active
+run_id: fea2d0c6a0a54917ace205b705e31b65
+run_name: able-cow-554
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777391740014
+status: 3
+tags: []
+user_id: Lev

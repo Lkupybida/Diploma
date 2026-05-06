@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/926463610299518726/models/m-e3e8554f15914b5ebdee4df2da1e4676/artifacts
+creation_timestamp: 1777430720943
+experiment_id: '926463610299518726'
+last_updated_timestamp: 1777430727438
+model_id: m-e3e8554f15914b5ebdee4df2da1e4676
+model_type: null
+name: rose_model
+source_run_id: 9060cb2a16d444a7a96dd56a9086cc0e
+status: 2
+status_message: null

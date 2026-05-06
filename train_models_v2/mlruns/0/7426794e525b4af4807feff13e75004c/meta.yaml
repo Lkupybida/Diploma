@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/0/7426794e525b4af4807feff13e75004c/artifacts
+end_time: 1777428816267
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7426794e525b4af4807feff13e75004c
+run_name: luxuriant-mouse-287
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777428798970
+status: 3
+tags: []
+user_id: Lev

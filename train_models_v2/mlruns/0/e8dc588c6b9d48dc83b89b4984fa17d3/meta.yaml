@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/0/e8dc588c6b9d48dc83b89b4984fa17d3/artifacts
+end_time: 1777380819183
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e8dc588c6b9d48dc83b89b4984fa17d3
+run_name: masked-auk-659
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777380819135
+status: 3
+tags: []
+user_id: Lev

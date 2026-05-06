@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/813112274086968067/1a185e21f9fd4cd5bcb37d4ba2b8c1ae/artifacts
+end_time: 1777440738882
+entry_point_name: ''
+experiment_id: '813112274086968067'
+lifecycle_stage: active
+run_id: 1a185e21f9fd4cd5bcb37d4ba2b8c1ae
+run_name: chronos-2-mv-ctx512-pred64-zeroshot
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777440738587
+status: 3
+tags: []
+user_id: Lev

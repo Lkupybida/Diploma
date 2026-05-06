@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/644362921912639977/71aedfcae7674131afa0f1509c96e551/artifacts
+end_time: 1777390389115
+entry_point_name: ''
+experiment_id: '644362921912639977'
+lifecycle_stage: active
+run_id: 71aedfcae7674131afa0f1509c96e551
+run_name: nosy-penguin-80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777390389073
+status: 3
+tags: []
+user_id: Lev

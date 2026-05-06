@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/644362921912639977/19a01fc056d44f8489eb02d4093572af/artifacts
+end_time: 1777397356061
+entry_point_name: ''
+experiment_id: '644362921912639977'
+lifecycle_stage: active
+run_id: 19a01fc056d44f8489eb02d4093572af
+run_name: caring-roo-211
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777397355896
+status: 3
+tags: []
+user_id: Lev

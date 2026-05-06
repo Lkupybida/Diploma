@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/644362921912639977
+creation_time: 1777389981951
+experiment_id: '644362921912639977'
+last_update_time: 1777389981951
+lifecycle_stage: active
+name: xgboost_with_blackouts

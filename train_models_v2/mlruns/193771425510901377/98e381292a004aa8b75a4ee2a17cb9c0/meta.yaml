@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/193771425510901377/98e381292a004aa8b75a4ee2a17cb9c0/artifacts
+end_time: 1777390797540
+entry_point_name: ''
+experiment_id: '193771425510901377'
+lifecycle_stage: active
+run_id: 98e381292a004aa8b75a4ee2a17cb9c0
+run_name: sassy-crow-477
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777390797497
+status: 3
+tags: []
+user_id: Lev

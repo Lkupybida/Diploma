@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Lev/Documents/GitHub/Diploma/train_models_v2/mlruns/963935225531722487/51b787c4866c4c27a431437b3df36cb0/artifacts
+end_time: 1777369731737
+entry_point_name: ''
+experiment_id: '963935225531722487'
+lifecycle_stage: active
+run_id: 51b787c4866c4c27a431437b3df36cb0
+run_name: lstm_money_loss
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777360383650
+status: 3
+tags: []
+user_id: Lev

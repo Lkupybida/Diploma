@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/237295797256905020/e4f8e9c4d59544168482a692b77910a5/artifacts
+end_time: 1777310435276
+entry_point_name: ''
+experiment_id: '237295797256905020'
+lifecycle_stage: active
+run_id: e4f8e9c4d59544168482a692b77910a5
+run_name: popular-owl-246
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777310435236
+status: 3
+tags: []
+user_id: Lev

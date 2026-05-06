@@ -1,0 +1,11 @@
+mlflow==3.11.1
+cloudpickle==3.1.2
+defusedxml==0.7.1
+dill==0.3.8
+matplotlib==3.10.8
+pandas==2.1.4
+pytorch-lightning==2.6.1
+rich==15.0.0
+scipy==1.11.4
+torch==2.6.0
+torchvision==0.21.0

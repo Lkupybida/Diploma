@@ -1,0 +1,8 @@
+digest: b5d17cc7
+name: dataset
+profile: '{"features_shape": [2, 1], "features_size": 2, "features_nbytes": 8}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float32\", \"shape\": [-1, 1]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "Lev", "mlflow.source.name": "C:\\Users\\Lev\\Miniconda3\\envs\\Diploma\\lib\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
