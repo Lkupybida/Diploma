@@ -1,0 +1,206 @@
+
+
+\chapter{Related Work}
+\label{chap:related_work}
+
+Electricity demand forecasting has received substantial attention in the literature,
+yet studies addressing large-scale distributed commercial networks, particularly those
+combining differing site characteristics, EV charging infrastructure, and real market
+penalty structures remain scarce.
+
+Research on electricity demand forecasting using Ukrainian data is notably limited in
+both volume and methodological scope. The most directly relevant study is by
+\citet{sinitsyn2023}, conducted at the Institute of Software Systems of the National
+Academy of Sciences of Ukraine, which addresses forecasting of electricity generation
+and consumption using machine learning. The authors applied seven regression algorithms
+from the scikit-learn library --- including k-nearest neighbors (KNN), Random Forest, Gradient
+Boosting, and linear regression --- to hourly data from Ukraine's four electricity market
+segments: bilateral contracts, day-ahead, intraday, and balancing markets. For the task
+of reconstructing missing bilateral contract data, the best-performing KNN configuration
+achieved $R^2 = 0.987$ and Mean Absolute Percentage Error (MAPE) of approximately $0.85\%$, leading the authors to
+conclude that one-hour-ahead market volume forecasting can reach accuracy near $1\%$.
+While this represents a useful proof of concept for data-driven approaches on Ukrainian
+market data, the study has several fundamental limitations for the purposes of distributed
+site-level forecasting. The forecasting target is aggregate market volume --- a
+substantially easier task than predicting consumption at hundreds of individual
+heterogeneous locations. No deep learning architectures were evaluated, the forecasting
+horizon was limited to a single step ahead, and the evaluation relied exclusively on
+statistical metrics without any assessment of economic value or imbalance cost
+implications.
+
+The international literature provides a much richer methodological landscape, beginning
+with classical statistical approaches that remain important reference points.
+\citet{cai2019} provided a thorough comparison of SARIMAX against deep learning
+alternatives for day-ahead building-level load forecasting across three commercial
+buildings with different characteristics and load scales (40--650 kW peak). Their results
+demonstrated that SARIMAX performs adequately when weather covariance is weak, but
+performance deteriorates substantially when temperature rises and air conditioning loads
+increase. This highlights traditional models' limitations: they struggle with
+nonlinearity and do not naturally scale to large sets of heterogeneous series.
+
+The main disadvantage of ARIMA with exogenous variables and SARIMAX is the need to train a separate model for
+each time series. This concept is most directly and explicitly articulated by
+\citet{grabner2023}, who state that traditional load forecasting techniques
+``commonly learn one prediction model for each given time series and are therefore
+considered to be local,'' and explicitly identify that such local models are ``less
+suitable for forecasting larger groups of time series, as is the case with distribution
+networks.''
+
+Machine learning methods such as Support Vector Regression (SVR), Random Forest and XGBoost
+partially overcome these limitations and have shown reasonable performance in electricity
+demand forecasting~\cite{sinitsyn2023}. However, these models still often require
+substantial feature engineering and are typically applied either to single-series problems
+or to pooled tabular settings without explicitly modeling temporal structure across many
+locations~\cite{liu2025}. \citet{kyriakopoulos2025}, who systematically evaluated ARIMA,
+XGBoost, Gated Recurrent Unit (GRU), Long Short-Term Memory (LSTM), and Transformer models across four EV charging datasets, showed that
+ARIMA and XGBoost were competitive only in localized scenarios and did not scale reliably
+to longer horizons or higher aggregation levels.
+
+Considering this, \citet{cai2019} proposed a Gated Convolutional Neural Network ((GCNN24)) model for day-ahead building-level
+forecasting that outperformed both SARIMAX and gated RNN alternatives, improving accuracy
+by $22.6\%$ over SARIMAX while achieving a $25$--$42\%$ speedup in computation time
+compared to Recurrent Neural Network (RNN) models. The GCNN24 model proved superior to
+recursive one-hour models because it learns daily load shapes holistically rather than
+accumulating single-step prediction errors.
+
+The most significant benefit of deep learning approaches compared to classical models is
+the move from local models (one model per time series) to global models (one model for
+many time series). \citet{grabner2023} articulate the fundamental limitations of local
+modeling for distribution networks: local models ignore dependencies between loads,
+require sufficient historical data for each individual consumer, cannot handle locations
+with missing history, and are incapable of adapting to changing load behavior without
+retraining. Their proposed global framework, built on the Neural Basis Expansion Analysis for Time Series (N-BEATS) deep learning
+architecture, demonstrated that a single global model outperformed naive benchmarks by
+more than $25\%$ in Mean Absolute Error (MAE) across consumer aggregations ranging from individual households
+to large transformer stations, while requiring approximately $30\times$ fewer parameters
+than the equivalent set of local models. Training was $3.3\times$ faster for 1,000 time
+series compared to training local models individually. Global models can additionally
+generate reasonable forecasts for time series with no historical data --- a capability
+impossible with local approaches and demonstrated robust performance when load
+behavior changed over time, because the model had learned diverse patterns from the
+broader training set.
+
+The most widely used architecture in related research is the LSTM network. In the context of residential demand forecasting, \citet{bayer2024} compare standalone LSTM models with CNN–LSTM hybrids, where a Convolutional Neural Network is employed for feature extraction and the LSTM component captures temporal dependencies. Their study benchmarks these approaches against synthesized load profiles (SLPs), which remain standard practice among many small and medium-sized utilities. Using smart meter data from 3,511 households in Germany, the authors demonstrate that LSTM-based approaches outperform SLPs by up to $68.5%$ in terms of Root Mean Square Error (RMSE) for day-ahead forecasts. Importantly, they also evaluated performance under simulated future grid states with increased distributed photovoltaic (PV) generation, finding that all methods performed worse under
+higher PV penetration.
+
+Transformer architectures represent the most recent frontier in load forecasting. Their
+self-attention mechanism enables direct modeling of relationships between any positions
+in a sequence without the sequential processing bottleneck of recurrent networks.
+\citet{moveh2025a} developed a modified Transformer framework with hierarchical attention
+mechanisms for multi-building energy prediction across 100 commercial buildings in three
+climate zones. Their architecture processes building-specific features and cross-building
+correlations through separate attention levels before combining them through cross-attention
+for final prediction. The framework achieved MAPE of $3.2\%$, a $23.7\%$ improvement
+over traditional methods with stable performance across building types (offices:
+$2.8\%$, healthcare: $3.5\%$) and near-linear computational scaling with building count.
+The hierarchical attention design is particularly instructive: it allows the model to
+learn both what is unique to each location and what is shared across the network, which
+is precisely the modeling challenge in a multi-site commercial forecasting system.
+
+\section{Evaluation and Loss Functions}
+
+The reviewed literature overwhelmingly relies on MAE, RMSE, and MAPE. These metrics are
+useful for comparison, but they have important limitations. \citet{koponen2020} argue that
+conventional error metrics often fail to reflect the real economic consequences of forecast
+errors, particularly because under-forecasting and over-forecasting may have asymmetric
+costs, and because peak-load errors are often more expensive than off-peak errors. Moreover,
+many of these metrics have significant flaws: MAPE penalizes over-forecasts more than
+under-forecasts, gives relatively little weight to large absolute errors during peak loads,
+and is undefined for zero values; MAE assumes linear cost dependence on error magnitude;
+and RMSE may or may not reflect actual cost dynamics. Through simulation of Finnish
+balancing market costs, they showed that forecasting error costs are highly stochastic,
+dominated by rare high-price peaks, and quadratically rather than linearly related to
+error magnitude when errors are small relative to the total balance.
+
+\citet{zhang2021} proposed a generalized cost-oriented load forecasting framework that
+directly addresses this gap, showing that models trained or evaluated with economically
+meaningful asymmetric loss functions can outperform models with conventional error metrics
+in real operational value. An Artificial Neural Network (ANN) model with an hourly cost-oriented loss achieved up to
+$13.74\%$ improvement in economic costs compared to the Mean Square Error (MSE) trained benchmark, and a Multiple Linear Regression
+(MLR) model with the same cost-oriented loss improved economic costs by $10.19\%$. Both
+cost-oriented models achieved better economic outcomes despite slightly higher statistical
+forecasting errors.
+
+\section{EV Charging: A Special Case}
+\label{sec:ev_charging}
+
+The growing presence of EV chargers at commercial locations introduces a forecasting
+challenge that is qualitatively different from conventional load prediction. EV charging
+demand is driven by individual user decisions arrival time, battery state, dwell time
+ rather than by physical processes like Heating, Ventilation, and Air Conditioning cycling or lighting schedules, making it
+inherently more stochastic, intermittent, and spiky. Charging station time series contain
+numerous zero-valued intervals interspersed with sharp demand peaks, a pattern that
+conventional forecasting methods struggle to model effectively~\cite{tang2024,
+koohfar2023}.
+
+\citet{vanetten2024} proposed a framework for large-scale EV charging demand forecasting
+across multiple stations using global deep learning. Their Neural Hierarchical Interpolation for Time Series (N-HiTS) model trained globally
+on data from multiple stations consistently outperformed locally trained counterparts,
+ARIMA, naive baselines, and even Transformer models across four datasets from London,
+Palo Alto, Perth, and Boulder. The global N-HiTS model reduced MAE by $51.6\%$ compared
+to locally trained N-HiTS on London data. The paper highlights a practical evaluation
+concern: high MAPE values resulted from the low signal-to-noise ratio in individual
+station data, where near-zero consumption periods inflate percentage errors. This means
+that error rates for EV charger data are quite high, with the lowest MAPE for day-ahead
+forecasting at $30.16\%$ and for 30 days at $42.41\%$, highlighting that accurately
+forecasting EV charging loads is substantially harder than predicting conventional
+consumption.
+
+\section{Feature Engineering and Heterogeneity}
+\label{sec:feature_engineering_literature}
+
+Across the reviewed literature, certain input features consistently emerge as important.
+Temperature is the dominant weather variable, showing correlations of $0.51$--$0.76$
+with building load across different commercial buildings~\cite{cai2019}.
+\citet{tian2025} performed more granular analysis using both Pearson correlation and
+Maximal Information Coefficient, confirming that temperature and humidity exhibit the
+strongest relationships with load, with the strength varying seasonally. Calendar
+features --- hour, day of week, month, holidays --- appear universally across
+studies~\cite{sinitsyn2023, ye2024, moveh2025a}.
+
+Handling heterogeneity across locations remains a practical challenge. \citet{spencer2024}
+demonstrated that dataset characteristics critically influence model performance, with
+weather feature consistency being more important than geographic or climate zone
+similarity. \citet{grabner2023} addressed heterogeneity through clustering and
+localization, while \citet{moveh2025a} used building-type-specific normalization
+parameters. For weather forecast uncertainty specifically, \citet{xu2025} showed that
+one-day-ahead probabilistic weather forecasts produced the most accurate probabilistic
+load predictions compared to longer-range forecasts, and \citet{cai2019} demonstrated
+that their GCNN24 model's RMSE increased by only $3.36\%$ even when $60\%$ of weather
+forecast data was corrupted with noise, indicating meaningful robustness to weather
+prediction errors.
+
+\section{Model Benchmarks}
+\label{sec:benchmarks}
+
+To situate candidate architectures within the broader landscape, two large-scale
+benchmarking studies were reviewed. \citet{qiu2024tfb} evaluated a wide range of models
+--- from ARIMA and Linear Regression through RNNs to several Transformer variants --- on
+multivariate time series including the Electricity dataset, containing hourly electricity
+consumption in kWh from 2012 to 2014. PatchTST displayed the best performance, with
+Crossformer not far behind. \citet{li2024tsfmbench} focused on foundation models for time
+series forecasting, with Chronos and ROSE showing the best short-term and mid-term
+forecasting performance on the Electricity dataset, and MOIRAI displaying the best
+long-term performance.
+
+\section{Summary}
+
+Overall, while classical and machine learning approaches can be useful in certain cases,
+multiple studies outline their limitations: limited scalability for ARIMA-family models,
+and a lack of ability to model temporal dynamics~\cite{kyriakopoulos2025}. For consumption
+prediction, deep learning models and especially LSTM-based architectures are most
+prominent. Newer Transformer-based models featuring attention mechanisms have seen only
+limited usage and are not always superior to strong deep learning alternatives, with
+\citet{vanetten2024} showing that N-HiTS can outperform Transformer models. Regarding
+loss functions, \citet{zhang2021} showed that using a loss function reflecting the real
+economic costs of prediction errors can yield up to $13\%$ in savings compared to an
+equivalent model trained for statistical accuracy. Another important finding is that EV
+load forecasting carries significantly higher error rates than conventional load
+forecasting, due to the low signal-to-noise ratio~\cite{vanetten2024}. Feature engineering
+is also a critical component of model training, with weather and calendar features
+appearing across many studies~\cite{sinitsyn2023, ye2024, moveh2025a}. Notably,
+\citet{cai2019} showed that even when $60\%$ of weather data was corrupted by noise, RMSE
+increased by only $3.36\%$, highlighting meaningful model robustness to weather forecast
+errors. Finally, a review of relevant benchmarks identified the best-performing
+Transformer models on the Electricity dataset as PatchTST, Crossformer, Chronos, ROSE,
+and MOIRAI~\cite{li2024tsfmbench, qiu2024tfb}.

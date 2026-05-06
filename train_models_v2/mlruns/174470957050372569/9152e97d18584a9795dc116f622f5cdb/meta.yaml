@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/174470957050372569/9152e97d18584a9795dc116f622f5cdb/artifacts
+end_time: 1777308036418
+entry_point_name: ''
+experiment_id: '174470957050372569'
+lifecycle_stage: active
+run_id: 9152e97d18584a9795dc116f622f5cdb
+run_name: sarimax_grid_1777307042
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777307042391
+status: 3
+tags: []
+user_id: levkupybida

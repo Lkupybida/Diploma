@@ -1,0 +1,26 @@
+# ── Web UI ─────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Data ───────────────────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=14.0.0          # parquet read/write
+openpyxl>=3.1.0          # Excel read/write (pandas engine)
+
+# ── Networking ─────────────────────────────────────────────────────────────────
+requests>=2.31.0          # weather.py → Open-Meteo API
+
+# ── Utilities ──────────────────────────────────────────────────────────────────
+tqdm>=4.66.0
+
+# ── XGBoost ────────────────────────────────────────────────────────────────────
+xgboost>=2.0.0
+
+# ── Chronos-2 (fine-tuned + zero-shot) ────────────────────────────────────────
+# torch is installed separately as a CPU-only build in the Dockerfile.
+# chronos-forecasting pulls in transformers and huggingface-hub automatically.
+chronos-forecasting>=2.1.0
+
+# ── TCN via pytorch-forecasting ────────────────────────────────────────────────
+pytorch-forecasting>=1.0.0
+lightning>=2.0.0

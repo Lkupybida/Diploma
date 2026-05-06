@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/962380406396403441/9b7f8e110e934ec09e1bf21941a90e09/artifacts
+end_time: 1777388516866
+entry_point_name: ''
+experiment_id: '962380406396403441'
+lifecycle_stage: active
+run_id: 9b7f8e110e934ec09e1bf21941a90e09
+run_name: suave-cod-77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777388514822
+status: 4
+tags: []
+user_id: levkupybida

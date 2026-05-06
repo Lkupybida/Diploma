@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/962380406396403441/08601c11d67d4bc8ae4770eccc906d0b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '962380406396403441'
+lifecycle_stage: active
+run_id: 08601c11d67d4bc8ae4770eccc906d0b
+run_name: agreeable-cow-468
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777388613867
+status: 1
+tags: []
+user_id: levkupybida

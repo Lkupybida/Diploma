@@ -1,0 +1,8 @@
+artifact_location: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/174470957050372569
+creation_time: 1777305645855
+experiment_id: '174470957050372569'
+last_update_time: 1777305645855
+lifecycle_stage: active
+name: sarimax_electricity
+trace_location: null
+workspace: default

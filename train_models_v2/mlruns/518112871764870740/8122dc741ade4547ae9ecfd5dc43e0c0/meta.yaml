@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/518112871764870740/8122dc741ade4547ae9ecfd5dc43e0c0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '518112871764870740'
+lifecycle_stage: active
+run_id: 8122dc741ade4547ae9ecfd5dc43e0c0
+run_name: wistful-chimp-777
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777334306105
+status: 1
+tags: []
+user_id: levkupybida

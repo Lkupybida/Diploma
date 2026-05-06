@@ -1,15 +1,10 @@
-# Core data & ML
 pandas>=1.5.0
 scikit-learn>=1.0.0
 statsmodels>=0.13.0
 openpyxl>=3.0.0
 pyarrow>=10.0.0
-
-# Gradient boosting
 xgboost>=2.0.0
 lightgbm>=4.0.0
 catboost>=1.2.0
-
-# TabM (tabular deep learning)
 torch>=2.0.0
 tabm>=0.0.3

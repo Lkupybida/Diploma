@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/518112871764870740/b871d1b7537d469595ee0c71f3835dfd/artifacts
+end_time: 1777332193980
+entry_point_name: ''
+experiment_id: '518112871764870740'
+lifecycle_stage: active
+run_id: b871d1b7537d469595ee0c71f3835dfd
+run_name: masked-goose-35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777331467467
+status: 3
+tags: []
+user_id: levkupybida

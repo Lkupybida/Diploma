@@ -15,7 +15,8 @@
       "Bash(\"C:/Users/Lev/Miniconda3/envs/diploma310/Scripts/pip.exe\" list *)",
       "Bash(\"C:/Users/Lev/Miniconda3/envs/Diploma311/python.exe\" --version)",
       "Bash(\"C:/Users/Lev/Miniconda3/envs/Diploma311/python.exe\" -c \"from uni2ts.model.moirai import MoiraiForecast; print\\([m for m in dir\\(MoiraiForecast\\) if not m.startswith\\('_'\\)]\\)\")",
-      "Bash(C:/Users/Lev/Miniconda3/envs/Diploma311/python.exe *)"
+      "Bash(C:/Users/Lev/Miniconda3/envs/Diploma311/python.exe *)",
+      "Bash(grep -E \"\\\\.ipynb$\")"
     ]
   }
 }

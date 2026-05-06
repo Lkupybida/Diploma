@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/174470957050372569/e283c3aab2564b67bcd608be5f0a3301/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '174470957050372569'
+lifecycle_stage: active
+run_id: e283c3aab2564b67bcd608be5f0a3301
+run_name: bold-duck-638
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777314884725
+status: 1
+tags: []
+user_id: levkupybida

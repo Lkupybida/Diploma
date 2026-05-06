@@ -1,0 +1,37 @@
+services:
+  app:
+    build:
+      context: .          # Dockerfile lives in the same directory
+      dockerfile: Dockerfile
+
+    image: electricity-forecasting:latest
+
+    container_name: electricity-forecasting
+
+    ports:
+      - "8501:8501"       # Streamlit default port
+
+    volumes:
+      # ── Data files ─────────────────────────────────────────────────────────
+      # The inference scripts use paths like "../data/..." relative to /app,
+      # so the project's data/ directory is mounted at /data inside the
+      # container.  Adjust the left-hand side if your data lives elsewhere.
+      - ../data:/data:ro
+
+      # ── HuggingFace model cache ─────────────────────────────────────────────
+      # chronos_zs_inference.py downloads the "amazon/chronos-2" weights from
+      # HuggingFace on first use.  This named volume persists the download
+      # across container restarts so you only pay that cost once.
+      - hf_cache:/root/.cache/huggingface
+
+    environment:
+      # Tell HuggingFace libraries where to store downloaded models.
+      - HF_HOME=/root/.cache/huggingface
+      # Disable Streamlit's usage telemetry.
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+
+    restart: unless-stopped
+
+# Named volume for the HuggingFace cache.
+volumes:
+  hf_cache:

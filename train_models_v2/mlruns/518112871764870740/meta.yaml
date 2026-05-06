@@ -1,0 +1,8 @@
+artifact_location: file:///Users/levkupybida/PycharmProjects/Diploma/train_models_v2/mlruns/518112871764870740
+creation_time: 1777328675388
+experiment_id: '518112871764870740'
+last_update_time: 1777328675388
+lifecycle_stage: active
+name: arimax_electricity
+trace_location: null
+workspace: default

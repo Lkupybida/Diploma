@@ -20,3 +20,12 @@
 /.claude
 /catboost_info
 /tb_logs
+/old_experiments/
+/.claude/
+/catboost_info/
+/checkpoints/
+/lightning_logs/
+/tb_logs/
+/interface/models/chronos-2-finetuned/
+interface/models/chronos-2-finetuned/model.safetensors
+interface/models/chronos-2-finetuned/config.json
