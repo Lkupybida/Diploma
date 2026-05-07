@@ -7,6 +7,7 @@ Diploma project: multi-model hourly electricity consumption forecasting for EV c
 ```
 .
 ├── data/               # Raw, processed, and inference data
+├── data_pipeline/      # Scripts and notebooks that build the gold training data
 ├── interface/          # Streamlit forecasting UI (Docker-based)
 ├── training/           # Training notebooks and shared utilities
 └── requirements.txt    # Training environment dependencies
@@ -22,6 +23,10 @@ docker compose up --build
 ```
 
 Open **http://localhost:8501** in your browser. See [`interface/README.md`](interface/README.md) for full setup instructions, model availability, and input data requirements.
+
+## Data pipeline
+
+Raw Excel files → gold parquet files ready for training. See [`data_pipeline/README.md`](data_pipeline/README.md) for the full stage-by-stage breakdown.
 
 ## Training
 
