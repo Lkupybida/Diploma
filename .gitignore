@@ -13,8 +13,7 @@
 /mlruns/
 /models/
 /overleaf
-*.parquet
-*.xlsx
+*.DS_Store
 /lightning_logs
 /checkpoints
 /.claude

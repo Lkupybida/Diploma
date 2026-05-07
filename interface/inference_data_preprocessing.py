@@ -198,7 +198,7 @@ def add_weather_wrapper(df, no_weather_path, weather_path, checkpoint_path, weat
 
     return df_with_weather
 
-def add_ev_power(df, static_path = "../data/raw/8month2025.xlsx", ev_path = "../data/additional_data/EV_chargers.xlsx"):
+def add_ev_power(df, static_path = "../data/excel_files/2025_7-8.xlsx", ev_path = "../data/additional_data/EV_chargers.xlsx"):
 
     static_data_dict = pd.read_excel(static_path, sheet_name="Dict")[['EIC-код', 'Унікод']]
 
@@ -576,7 +576,7 @@ def inference_preprocessing_full(df, start_dt, end_dt, ohe = False):
     )
     df = pd.concat([df, extended_df]).copy()
 
-    static_path = "../data/raw/8month2025.xlsx"
+    static_path = "../data/excel_files/2025_7-8.xlsx"
     static_data_dict = get_static_data_dict(path=static_path)
 
     df = df.merge(static_data_dict, on='EIC-код', how='left', suffixes=('', '_dict'))
