@@ -1,10 +1,51 @@
-pandas>=1.5.0
-scikit-learn>=1.0.0
-statsmodels>=0.13.0
-openpyxl>=3.0.0
-pyarrow>=10.0.0
+# ── Core data / numerics ────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+pyarrow>=14.0.0           # parquet read/write
+openpyxl>=3.1.0           # Excel read/write
+scikit-learn>=1.2.0
+statsmodels>=0.14.0
+
+# ── Networking ──────────────────────────────────────────────────────────────────
+requests>=2.31.0           # weather.py → Open-Meteo API
+
+# ── Visualisation ───────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# ── Experiment tracking ─────────────────────────────────────────────────────────
+mlflow>=2.10.0
+
+# ── Utilities ───────────────────────────────────────────────────────────────────
+tqdm>=4.66.0
+
+# ── Gradient boosting ───────────────────────────────────────────────────────────
 xgboost>=2.0.0
 lightgbm>=4.0.0
 catboost>=1.2.0
-torch>=2.0.0
+
+# ── Deep learning — PyTorch ecosystem ───────────────────────────────────────────
+# Install the CPU-only build of torch first if you do not have a CUDA GPU:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.1.0
+lightning>=2.0.0           # pytorch-lightning successor; used by TCN, Crossformer, LSTM, GRU
+
+# ── TCN / TFT ───────────────────────────────────────────────────────────────────
+pytorch-forecasting>=1.0.0
+
+# ── HuggingFace ecosystem ────────────────────────────────────────────────────────
+transformers>=4.40.0       # Chronos, PatchTST, Moirai
+huggingface_hub>=0.22.0    # model downloads (Chronos ZS, Moirai)
+chronos-forecasting>=2.1.0
+uni2ts>=1.1.0              # Salesforce Moirai
+
+# ── N-HiTS / neural forecasting ─────────────────────────────────────────────────
+neuralforecast>=1.7.0
+
+# ── Tabular MLP baseline ────────────────────────────────────────────────────────
 tabm>=0.0.3
+
+# ── Notebooks ───────────────────────────────────────────────────────────────────
+ipykernel>=6.0.0
+jupyterlab>=4.0.0
